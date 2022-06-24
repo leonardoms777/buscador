@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rick & Morty</title>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+		crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/38e217cad1.js" crossorigin="anonymous"></script>
+</head>
+
+<body  background="/wall.jpeg">
+	<!-- ........navbar content.......... -->
+	<div class="container">
+		<nav class="navbar fixed-top navbar-expand-lg  bg-gradient navbar-dark bg-dark">
+			<div class="container-fluid ">
+				<a class="navbar-brand" id="title" style="font-family: 'Nosifer', cursive;" href="#"><img
+						src="data:image/png;base64,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">
+					Rick & Morty<img
+						src="data:image/png;base64,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"></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+					aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarScroll">
+					<ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Personajes</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Episodios</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false">
+								Status
+							</a>
+							<ul class="bg-dark bg-gradient dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+								<li><a class="dropdown-item  text-light" href="#">Vivo</a></li>
+								<li><a class="dropdown-item" href="#"></a></li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li><a class="dropdown-item text-light" href="#">Muerto</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link disabled">Proximamente...</a>
+						</li>
+					</ul>
+
+					<div class="container">
+									<form class="row mt-3" id="search-id">
+
+							<div class="col-md-5">
+								<label for="search-id" class="visually-hidden">Nombre</label>
+								<input class="form-control" data-longitud="1.5" 
+								data-altura="grande" id="id" name="search" type="text" placeholder="Buscar id" aria-label="search-id">
+							</div>
+							<div class="col-auto">
+								<button type="submit" class="btn btn-primary "><i class="fa-solid fa-magnifying-glass"></i></button>
+							</div>
+							<div class="col-auto">
+								<button type="sumbit" id="reset" class="btn btn-danger  bg-gradient "><i class="fa-solid fa-trash-can"></i></button>
+							</div>	
+							<div class="col-auto">
+				<button type="button" id="button-favoritos" class="btn btn-info mb-3"><i class="fa-solid fa-heart"></i></button>
+			</div>
+					</div>
+
+
+
+
+
+				</div>
+			</div>
+		</nav><br><br><br><br>
+	<!-- ........navbar content.......... -->
+
+	</div>
+		
+					<div class="row is-multiline" id="resultado">
+						<!--Aqui van los resultados-->
+					</div>
+
+
+	<script src="/Dev.f/buscador/js/app.js"></script>
+
+
+</body>
+
+</html>
