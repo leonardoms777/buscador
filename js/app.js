@@ -1,7 +1,7 @@
 let info = [];
 
 
-fetch('/Dev.f/buscador/js/app.json')
+fetch('js/app.json')
 	.then(response => response.json())
 	.then(data => {
 		info = data;
